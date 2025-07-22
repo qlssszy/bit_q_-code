@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main(void)
@@ -8,13 +8,13 @@ int main(void)
 	char input[20];
 
 again:
-	system("shutdown -s -t 60");//Ê¹ÓÃÏµÍ³¹Ø»úÃüÁî
-	printf("Çë×¢ÒâÄãµÄµçÄÔ½«ÔÚ60SÄÚ¹Ø»ú£¬ÊäÈë¡°ÎÒÊÇÖí¡±²ÅÄÜÈ¡Ïû¹Ø»ú:");
+	system("shutdown -s -t 60");//ä½¿ç”¨ç³»ç»Ÿå…³æœºå‘½ä»¤
+	printf("è¯·æ³¨æ„ä½ çš„ç”µè„‘å°†åœ¨60Så†…å…³æœºï¼Œè¾“å…¥â€œæˆ‘æ˜¯çŒªâ€æ‰èƒ½å–æ¶ˆå…³æœº:");
 	scanf("%s", input);
-	if (strcmp("ÎÒÊÇÖí", input) == 0) //Ê¹ÓÃ¿âº¯ÊıÅĞ¶Ï×Ö·û´®ÊÇ·ñÏàµÈ
+	if (strcmp("æˆ‘æ˜¯çŒª", input) == 0) //ä½¿ç”¨åº“å‡½æ•°åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰
 		system("shutdown -a");
 	else
-		goto again;  //gotoÓï¾äÌø×ª£¬Ñ­»·ÅĞ¶Ï
+		goto again;  //gotoè¯­å¥è·³è½¬ï¼Œå¾ªç¯åˆ¤æ–­
 
 	return 0;
 }
